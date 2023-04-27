@@ -1,0 +1,627 @@
+body {
+    margin: auto;
+    background-color: #f2f3f7;
+    /* background-color: #000000; */
+    direction: rtl;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+button {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+#container {
+    width: 75%;
+    margin: auto;
+    
+}
+
+#redbanner {
+    background-color: #ff3c00;
+    font-size: 1rem;
+    font-weight: 400;
+    color: aliceblue;
+    padding:0.2rem 1rem ;
+    line-height: 0.2rem;
+    border-radius: 60px;
+    width: max-content;
+    position: fixed;
+    margin: 0PX auto;
+    bottom: 0px;
+    margin-bottom: 1rem;
+    z-index: 3;
+}
+
+
+header {
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    justify-content: center;
+}
+
+header ul li {
+    list-style-type: none;
+    margin: 20px;
+    display: inline-block;
+}
+
+
+header ul li a {
+    font-weight: 400;
+    color: rgb(53, 53, 53);
+}
+
+header ul  button {
+    background-color: #c8d2ff5e;
+    border: 0px solid transparent;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1px 10px 3px 10px ;
+    margin: 20px;
+}
+
+header ul   button i {
+    top: 5px;
+    scale: 80%;
+}
+
+i {
+    display: inline-block !important ;
+}
+
+header ul li  i {
+    top: -3px;
+    scale: 70%;
+}
+
+
+header ul ul {
+    display: none;
+    
+}
+
+header li  a  {
+    padding:1px 7px;
+    border-radius: 15px;
+    transition: all 0.1s;
+}
+
+header li:hover > a {
+color: white;
+background-color: rgb(253, 67, 67);
+    border-radius: 15px;
+    box-shadow: 0px 0px 58px 7px rgba(0,0,0,0.1);
+}
+
+
+
+header ul li:hover  ul {
+    display: block;
+    position: absolute;
+    margin:0px 0px;
+    padding: 2px;
+    background-color: #f2f3f7;
+    border-radius: 5px;
+    box-shadow: 0px 38px 59px 37px rgba(0,0,0,0.1);
+} 
+
+
+header ul li:hover li {
+    display: block;
+    margin: 2px;
+    padding: 3px 6px;
+}
+
+
+    header ul li:hover li:hover {
+        max-width: fit-content;
+        border-radius: 5px;
+        box-shadow: unset !important;
+    }
+
+    
+header ul li:hover ul i {
+    top: 2px;
+}
+
+
+header ul a img {
+    padding-top: 20px;
+}
+
+
+
+.catbanner {
+    display: flex;
+
+}
+
+.banneritem {
+    padding:23px 20px ;
+    flex: 25% ;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    box-shadow: inset 0px 100px 100px -48px #00000065;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ;
+}
+
+.banneritem:hover {
+    box-shadow: inset 0px 100px 100px -48px #000000a8;
+}
+
+.banneritem:nth-child(1) {
+    background-image: url(image/topbanner/Movie.png);
+}
+.banneritem:nth-child(2) {
+    background-image: url(image/topbanner/Music.png)
+}
+.banneritem:nth-child(3) {
+    background-image: url(image/topbanner/Apps.png);}
+
+.banneritem:nth-child(4) {
+    background-image: url(image/topbanner/Other.png);
+}
+.banneritem:nth-child(5) {
+    background-image: url(image/topbanner/Game.png);
+}
+
+.slidersection {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+
+.slider {
+    text-align: center;
+    height: 15rem;
+    border-radius: 5px;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    margin:0px 10px 0px 10px;
+    width: 50%;
+}
+
+
+
+.textandlogo {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    transition: all 0.5s;
+    flex-direction: column;
+    margin: 0px;
+    padding: 80px 50px;
+}
+
+.slider:hover .textandlogo  {
+    opacity: 100;
+}
+
+
+.logo {
+    margin: 0px 0px 3px 0px;
+}
+
+.caption {
+    color: white;
+    margin: 0px 0px 6px 0px;
+}
+
+.slider .button {
+    margin:0px;    
+}
+
+.slider  button {
+    transition: opacity 0.7S;
+    color: #f0f0f0;
+    border:0px solid white;
+    border-radius: 20px;
+    background-color: #ff0000f8;
+    padding:0px 10px 0px 10px ;
+    font-size: 19px;
+    box-shadow: 1px 1px 30px rgb(255, 0, 0);
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.one {
+    background-image: url(image/Slider/1bg.png);
+}
+
+.two{
+    background-image: linear-gradient(red,black);    
+}
+
+
+#slideronetop {
+    padding-top: 0.5rem;
+    width:13rem;
+    transition: all 1s;
+    scale: 0.90;
+}
+
+.slider:hover  #slideronetop {
+    transform: translateX(-90%);
+    scale: 1.05;
+}
+
+.slider p img {
+    width: 300px;
+}
+
+.logoontop {
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    padding-left: 12rem;
+    padding-bottom: 100px;
+    transition: transform 0.5s , opacity 0.3s ;
+    z-index: 2;
+}
+
+.logoontop img {
+    width: 300px !important;
+}
+
+.slider:hover .logoontop {
+    transform: translateX(151px) translateY(-18px) ;
+    opacity: 0;
+}
+
+.productsection {
+    width: 100%;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    /* flex-wrap: wrap; */
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+
+
+.product {
+    overflow: hidden;
+    margin: 0.5rem;
+    width: 22%;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s;
+    
+}
+
+.product:hover {
+    scale: 1.03;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.192);
+}
+
+
+.product img {
+    width: 100% ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}
+
+
+.product .addtocart {
+    position: absolute;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    margin: 25px;
+    transition: all 0.2s;
+    left: 0;
+    z-index: 5;
+}
+
+
+.product:hover .addtocart {
+    opacity: 100;
+}
+
+.product .addtocart i {
+    box-shadow: 1px 1px 10px #ff3c00;
+    background-color: #ff3c00;
+    border-color: #ff3c00;
+    
+}
+
+
+.product p {
+    font-size: 1rem;
+    padding: 0px;
+    margin: 3px;
+    padding-bottom: 5px;
+}
+
+.product .productlink  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.price {
+    font-size: 0.9rem !important;
+}
+
+
+.price:after  , .productpageprice:after {
+    content: "تومان" ;
+    font-size: 12px;
+    padding:0px 2px 0px 0px;
+}
+
+.productpageprice:after {
+    padding:0px;
+
+}
+
+.productslider {
+    opacity: 100;
+}
+
+
+
+.productslider #left {
+    
+    position: absolute;
+    left: 0 ;
+    margin: 175px 0px 0px -50px;
+    transition: all 0.2s;
+
+}
+
+.productslider #right {
+    
+    position: absolute;
+    right: 0;
+    margin: 175px -50px 0px 0px;
+    transition: all 0.2s;
+
+}
+
+.productslider i {
+    scale: 100%;
+    color: #ff3c00;
+}
+
+
+
+
+
+
+
+
+
+
+
+.productscategory {
+    text-align: center;
+    background: #ff3c00;
+    /* width: 100%; */
+    width: max-content;
+    margin: auto;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.productscategory:hover {
+    box-shadow: 0px 1px 10px #ff3c006b;
+}
+
+.productscategory i {
+    top: 4px;
+    scale: 90%;
+}
+
+
+#containeronproductpage {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.productpagesection {
+    display: flex;
+    width: 100%;
+    background-color: red;
+    height: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: center;
+    box-shadow: 0px 0px 58px 7px rgba(0,0,0,0.1);
+}
+
+.productrightsection {
+    background-color: #f0f0f0;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productleftsection {
+    background:linear-gradient(0deg, #f0f0f0 70%, #0075ff00 100%) , radial-gradient(circle, rgba(0,117,255,0) 0%, #f0f0f0 90%, #f0f0f0 100%) ,  url(image/products/apple_music-update_hero_08242021.jpg) ;
+    background-repeat: no-repeat ,  no-repeat ,  no-repeat ;
+    background-size: 100% , 100% , 100%;
+    width: 70%;
+    height: 100%;
+    padding:180px 50px 0px 50px;
+    text-align: justify;
+}
+
+.productphoto {
+    display: block;
+    transition: all 0.2s;
+}
+
+.productpageprice {
+    font-size: 1.3rem;
+    margin: 5px;
+
+}
+
+.productphoto:hover {
+    transform: scale(1.02);
+
+}
+
+.productaddtocart {
+    background-color: #ff3c00;
+    border: 0px solid transparent;
+    font-family: 'Vazirmatn', sans-serif;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.1s;
+    /* font-weight: bold; */
+}
+
+.productaddtocart:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    color: #ff4912;
+}
+
+.relatedproducts {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+.relatedproductstitle {
+    margin-top: 10px;
+
+}
+
+
+.relatedproducts a {
+    width: 20%;
+    transition: all 0.1s;
+}
+
+.relatedproducts a:hover {
+    transform: scale(1.03);
+}
+
+.relatedproducts img {
+    width: 100%;
+}
+
+
+.hashtags {
+    display: flex;
+    width: 70%;
+    align-items: center; justify-content: center;
+    margin-top: 10px;
+}
+
+.hashtags input {
+    margin: 2px;
+    background-color: transparent;
+    border: 1px solid #ff3c00;
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 10px;
+    color: #ff3c00;
+    padding: 3px ;
+    border-radius: 5px;
+}
+
+.hashtags input:hover {
+    background-color:#ff3c00;
+    color: white;
+
+}
+
+/* #planitem {
+    
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* #navtop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 55px ;
+    scale: 150%;
+    transition: all 2s;
+
+}
+
+#navtop a {
+    transition: all 2s;
+} */
+
+
+
+
+
+/* @media only screen and (min-width: 720px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    html {
+        font-size: 24px;
+    }
+} */
+
