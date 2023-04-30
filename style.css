@@ -483,8 +483,9 @@ header ul a img {
     background-size: 100% , 100% , 100%;
     width: 70%;
     height: 100%;
-    padding:180px 50px 0px 50px;
+    padding:50px;
     text-align: justify;
+    position: relative;
 }
 
 .productphoto {
@@ -520,26 +521,39 @@ header ul a img {
 
 h1 {
     color: #ff4912;
+    font-size: 1.5rem;
+}
+
+
+
+.relatedproductstitle {
+    text-align: center;
+    color: #ff3c00;
+    bottom: 170px;
+    position: absolute;
+    margin: 0px 38% ;
+
 }
 
 .relatedproducts {
-    margin-top: 20px;
     display: flex;
     flex-direction: row;
-    position: relative;
-    align-items: center;
+    position: absolute;
+    border-radius: 10px;
+    margin: auto;
+    bottom: 10px;
     justify-content: center;
-    margin-top: 0px;
-}
-.relatedproductstitle {
-    margin-top: 10px;
-
+    align-items: center;
 }
 
 
 .relatedproducts a {
-    width: 20%;
+    width: 13%;
     transition: all 0.1s;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 10px #e0e0e0;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 .relatedproducts a:hover {
